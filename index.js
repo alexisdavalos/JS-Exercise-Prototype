@@ -120,10 +120,21 @@ Baby.prototype.play = function(){
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+
+  1. If this is called in the global scope while strict mode is enabled, it will return undefined.
+  Else when this is called in the global scope JS will return the global object or the `window`
+
+  2. Implicit binding is the most common use case, in which the `this` looks to the left of the dot
+    this can only apply to objects that have methods though. 
+
+  3. Explicit Binding has three use cases: call,apply,bind. 
+    Call: You immediately call the function and pass arguments one by one
+    Apply: You immediately call the function and pass arguments in as an array
+    Bind: Does not immediately invoke the function. It does pass the arguments in one by one.
+    The end result however is that bind returns a brand new function that can be invoked later.
+
+  4. There is also New binding, this will construct a new object entirely and `this` will point to
+  the newly constructed object and the parameters passed to it. 
 */
 
 
